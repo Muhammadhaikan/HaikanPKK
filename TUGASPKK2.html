@@ -34,7 +34,7 @@ header {
 header nav ul {
     list-style-type: none;
     text-align: center;
-    font-size: large;
+    font-size: medium;
     
 }
 
@@ -45,14 +45,17 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
     font-family:monaco;
+    text-shadow: 3px 3px 15px black ;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+
     
     
 }
-header nav ul li a :hover{
+header nav ul li a:hover{
     background-color:rgb(226, 18, 18) ;
 }
 header nav ul li img{
@@ -60,8 +63,9 @@ header nav ul li img{
     display: flex;
     position: absolute;
     top: 10px;
-    left: 130vh;
+    left: 125vh;
     z-index: 2;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
 }
 
 .hero {
@@ -79,35 +83,32 @@ header nav ul li img{
 .order-box {
     display: inline-block;
     text-decoration: none;
-    width: 550px;
+    width: 380px;
     height: 600px;
     text-align: center;
     background-color: rgb(162, 2, 2);
     padding: 20px;
     border-radius: 10px;
     color: rgb(197, 100, 44);
-    box-shadow: 5px 5px 30px black rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 15px 30px black rgba(0, 0, 0, 0.3);
     background: none;
    
 }
-.order-box  :hover{
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
-
-}
-
 .order-box img {
-    width: 400px;
+    width: 310px;
     height: 200px;
     justify-content: center;
     object-fit: cover;
     border: 3px solid;
     color: rgb(240, 240, 240);
     margin-bottom: 20px;
-    border-radius: ;
+    border-radius: 10px;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.5); 
     
 }
 .order-box h2{
-    color: rgb(197, 197, 197);
+    color: rgb(216, 205, 205);
+    text-shadow: 5px 5px 15px;
 }
 
 
@@ -149,16 +150,7 @@ header nav ul li img{
     background-color: #333;
     color: white;
     background: none;
-}
-
-.footer p {
-    font-size: 18px;
-    text-align: left;
-}
-.footer img{
-    width: 50px;
-    
-}
+}  
 .fullscreen-bg {
     position: fixed;
     top: 0;
@@ -172,17 +164,10 @@ header nav ul li img{
 .fullscreen-bg video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-  
-}
-@media screen and (max-width:720px){
-    .hero .order-box{
-      width:100vw;  
-    }
+    object-fit: cover; 
 }
 </style>
-<body>
-   
+<body> 
     <div class="fullscreen-bg">
         <video loop muted autoplay poster="poster.jpg" class="fullscreen-bg video">
             <source src="bgsmoke.mp4" type="video/mp4">
@@ -192,11 +177,10 @@ header nav ul li img{
         <nav>   
             <ul>
                 <li><img src="logo.png.png" style="height: 50px;"></li>
-              
-                
+               
             </ul>
             <ul>
-                <li> <a href="TUGASPKK.html">Home</a></li>
+                <li> <a href="PKK.html">Home</a></li>
                 <li><a href="TUGASPKK2.html">About</a></li>
                 <li><a href=""></a>Contact US</li>
                 <li><a href="">Menu</a></li>
@@ -208,14 +192,7 @@ header nav ul li img{
         <img src="#" alt="">
         <div class="order-box">
             <img src="https://portalmadura.com/wp-content/uploads/2019/08/Resep-Pentol-Mercon-1.jpg" alt=""><div></div>
-        <h2 style="font-family: monaco; font-size: large; text-align: justify;">Baso Mercon adalah salah satu jenis makanan khas Indonesia yang merupakan inovasi dari bakso tradisional, dengan ciri khas utama isian cabai rawit yang sangat pedas di dalam baksonya. Nama "mercon" diambil dari bahasa Jawa yang berarti petasan, menggambarkan sensasi pedas "meledak" yang dirasakan saat menggigit bakso ini. Makanan ini populer di kalangan pecinta makanan pedas dan menjadi ikon kuliner unik di berbagai daerah di Indonesia.</h2>
-                
-                
-        </div>
-    </section>
-   <div class="tepi"></div>
-    <section class="footer">
-        <p><strong></p>
+                <h2 style="font-family: monaco; font-size: large; text-align: justify;">Baso Mercon adalah  salah satu jenis makanan khas Indonesia yang merupakan inovasi dari bakso tradisional, dengan ciri khas utama isian cabai rawit yang sangat pedas di dalam baksonya. Nama "mercon" diambil dari bahasa Jawa yang berarti petasan, menggambarkan sensasi pedas "meledak" yang dirasakan saat menggigit bakso ini. Makanan ini populer di kalangan pecinta makanan pedas dan menjadi ikon kuliner unik di berbagai daerah di Indonesia.</h2></div>
     </section>
 
 </body>
